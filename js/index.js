@@ -35,3 +35,4 @@ button.addEventListener("click" , () => {
 	printimage(result, result2);
 
 });
+printimage(dice.value, dice2.value);
