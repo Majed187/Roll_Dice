@@ -27,3 +27,11 @@ function printimage(image, image1){
 	containar.style["background-image"]=`url(/images/inverted-dice-${image}.svg)`;
 	containar1.style["background-image"]=`url(/images/inverted-dice-${image1}.svg)`;
 }
+
+let button = document.querySelector("#rolling-button");
+button.addEventListener("click" , () => {
+	let result = dice.roll();
+	let result2 = dice2.roll();
+	printimage(result, result2);
+
+});
