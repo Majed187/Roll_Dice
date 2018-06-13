@@ -20,3 +20,10 @@ let dice2 = {
 
 	}
 };
+function printimage(image, image1){
+	let containar = document.querySelector("#dice1");
+	let containar1 = document.querySelector("#dice2");
+
+	containar.style["background-image"]=`url(/images/inverted-dice-${image}.svg)`;
+	containar1.style["background-image"]=`url(/images/inverted-dice-${image1}.svg)`;
+}
