@@ -4,7 +4,7 @@ function getRandomInt(min, max) {
 	return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 let dice = {
-	value: 1,
+	value: getRandomInt(),
 	roll: () => {
 		this.value = getRandomInt(1, 6);
 		return this.value;
@@ -13,7 +13,7 @@ let dice = {
 };
 
 let dice2 = {
-	value: 1,
+	value: getRandomInt(),
 	roll: () => {
 		this.value = getRandomInt(1, 6);
 		return this.value;
@@ -30,9 +30,9 @@ function printimage(image, image1){
 
 let button = document.querySelector("#rolling-button");
 button.addEventListener("click" , () => {
-	let result = dice.roll();
-	let result2 = dice2.roll();
-	printimage(result, result2);
+	dice.roll();
+	dice2.roll();
+	printimage(dice.roll() ,dice2.roll());
 
 });
 printimage(dice.value, dice2.value);
