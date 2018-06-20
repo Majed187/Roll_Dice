@@ -4,7 +4,7 @@ function getRandomInt(min, max) {
 	return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 let dice = {
-	value: getRandomInt(),
+	value: getRandomInt(1,6),
 	roll: () => {
 		this.value = getRandomInt(1, 6);
 		return this.value;
@@ -13,7 +13,7 @@ let dice = {
 };
 
 let dice2 = {
-	value: getRandomInt(),
+	value: getRandomInt(1,6),
 	roll: () => {
 		this.value = getRandomInt(1, 6);
 		return this.value;
