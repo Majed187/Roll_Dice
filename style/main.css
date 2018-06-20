@@ -1,0 +1,11 @@
+.container {
+  min-height: 100vh;
+}
+
+.dice {
+  padding: 2px;
+  margin: 4px;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+}
